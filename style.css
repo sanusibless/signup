@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    background-image: url('images/bg-intro-desktop.png');
+    background-size: cover;
+    background-color: hsla(0, 95%, 56%, 0.9);
+    color: rgb(255, 255, 255);
+
+}
+
+section.sign-container {
+    max-width: 80%;
+    margin: 20vh auto;
+}
+
+article.sign-inner {
+    display: flex;
+    justify-content: space-around;
+}
+.sign-info {
+    padding-right: 20px;
+    width: 50%;
+    margin: auto auto;
+    opacity: 1;
+    text-align: justify;
+}
+
+.sign-info h1 {
+    margin-bottom: 5vh;
+}
+.sign-form-container {
+    margin-top: 10px;
+    padding: 10px;
+}
+.sign-form-container #signup-ads {
+    background-color: hsl(249, 37%, 55%);
+    opacity: 1;
+    width: 100%;
+    text-align: center;
+    padding: 15px 6px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+div.sign-form {
+    background-color: rgba(255,255,255,1);
+    padding-top: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+div.sign-form p {
+    color:rgb(132, 130, 130)
+}
+div.sign-info h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.input-control {
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid rgb(198, 197, 197);
+    border-radius: 3px;
+
+}
+
+.input-control:focus {
+    border: 1px  solid rgb(198, 197, 197);
+    appearance: none;
+    outline: none;
+}
+input[type=submit] {
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    color: white;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 600px ) 
+{
+    article.sign-inner {
+    flex-direction: column;
+    }
+    div.sign-info {
+        width: 90%;
+        text-align: center;
+        padding-left: 20px;
+        margin-bottom: 3vh;
+    }
+
+    .sign-info h1 {
+        margin-bottom: 25px;
+    }
+    .input-control {
+        width: 90%;
+    }
+    div.sign-form {
+        width: 100%;
+    }
+    section.sign-container {
+        max-width: 100%;
+        margin: 10vh 0px;
+    }
+    .sign-form-container #signup-ads {
+        padding: 30px;
+    }
+}
+
+.note {
+    width: 80%;
+    font-size: 12px;
+    padding: 10px 5px;
+    text-align: center;
+    margin: auto auto;
+}
+.note span {
+    color:rgb(252, 37, 37)
+}
